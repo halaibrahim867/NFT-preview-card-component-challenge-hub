@@ -28,18 +28,20 @@ body{
 }
 .child_1_2{
     width: 300px;
-    position: absolute;
-    top: 4.6%;
+    position:absolute;
+    top:4.5%;
     border-radius: 10px;
     opacity: .5;
     height: 300px;
     background-color: var(--main-color);
     display: none;
 }
+
 .child_1 .image_two {
-    position: absolute;
-    top: 24%;
-    left: 46.5%;
+    position: relative;
+    top: -60%;
+    left: 50%;
+    transform: translate(-50%, 0);
     width: 60px;
     display: none;
   
@@ -54,6 +56,10 @@ body{
 }
 .child_2 h3{
     color:var(--main-color);
+}
+.child_2 a {
+    text-decoration:none;
+    color: var(--main-color);
 }
 .child_2 h3 +p{
     color:var(--second-color);
