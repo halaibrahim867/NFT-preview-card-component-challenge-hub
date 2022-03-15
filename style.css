@@ -14,7 +14,7 @@ body{
 }
 .parent{
     width: 350px;
-    height: 850px;
+    height: 600px;
     margin: auto;
     padding: 20px;
     background-color: hsl(216, 50%, 16%);
@@ -51,4 +51,21 @@ body{
     margin: 15px auto;
     height: 2px;
     background-color: hsl(215, 32%, 27%);
+}
+.child_4 {
+    display: flex;
+}
+.child_4 img {
+    width: 45px;
+    height: 45px;
+    border: 2px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+    margin-right:15px ;
+}
+.child_4 p{
+    color: var(--second-color);
+    font: 600;
+}
+.child_4 p span{
+    color: var(--main-color);
 }
