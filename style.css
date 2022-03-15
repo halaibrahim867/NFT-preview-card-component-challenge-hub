@@ -20,10 +20,37 @@ body{
     background-color: hsl(216, 50%, 16%);
     border-radius: 15px;
 }
-.child_1 img {
+.child_1 ,
+.child_1 .image_one {
     width: 300px;
     height: 300px;
     border-radius: 10px;
+}
+.child_1_2{
+    width: 300px;
+    position: absolute;
+    top: 4.6%;
+    border-radius: 10px;
+    opacity: .5;
+    height: 300px;
+    background-color: var(--main-color);
+    display: none;
+}
+.child_1 .image_two {
+    position: absolute;
+    top: 24%;
+    left: 46.5%;
+    width: 60px;
+    display: none;
+  
+}
+.child_1:hover .image_two{
+    display: block;
+    z-index: 1;
+}
+.child_1:hover .child_1_2{
+    display: block;
+    z-index: 1;
 }
 .child_2 h3{
     color:var(--main-color);
