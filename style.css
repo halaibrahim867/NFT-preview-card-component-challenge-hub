@@ -46,3 +46,9 @@ body{
 .child_3 span {
     margin-left: 5px;
 }
+.parent .line_hr {
+    width: 90%;
+    margin: 15px auto;
+    height: 2px;
+    background-color: hsl(215, 32%, 27%);
+}
