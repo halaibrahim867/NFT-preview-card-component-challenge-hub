@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 body{
-    height: 120vh;
+    margin: 0;
+    top: 0;
     font-family: 'Outfit', sans-serif;
     background-color: hsl(217, 54%, 11%);
 }
@@ -19,64 +20,59 @@ body{
     padding: 20px;
     background-color: hsl(216, 50%, 16%);
     border-radius: 15px;
+
 }
-.child_1 ,
-.child_1 .image_one {
+.image{
+    position: relative;
     width: 300px;
-    height: 300px;
+}
+.image img{
+    width: 300px;
     border-radius: 10px;
 }
-.child_1_2{
-    width: 300px;
-    position:absolute;
-    top:4.5%;
+.image::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
     border-radius: 10px;
-    opacity: .5;
     height: 300px;
-    background-color: var(--main-color);
+    background: url(icon-view.svg) , rgba(0, 255, 247, .5);
+    width: 300px;
+    background-repeat: no-repeat;
+    background-size: 60px;
+    background-position: center;
     display: none;
+    z-index: 1;
+}
+.image:hover::before{
+    display: block;
 }
 
-.child_1 .image_two {
-    position: relative;
-    top: -60%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    width: 60px;
-    display: none;
-  
+.description a {
+    text-decoration:none;
+    color: hsl(0, 0%, 100%);
 }
-.child_1:hover .image_two{
-    display: block;
-    z-index: 1;
-}
-.child_1:hover .child_1_2{
-    display: block;
-    z-index: 1;
-}
-.child_2 h3{
+.description a:hover{
     color:var(--main-color);
 }
-.child_2 a {
-    text-decoration:none;
-    color: var(--main-color);
-}
-.child_2 h3 +p{
+.description h3 +p{
     color:var(--second-color);
 }
 
-.child_3 {
+
+.priceAndDays {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
 }
-.child_3 div:first-of-type span{
+.pricesndDays div:first-of-type span{
     color: var(--main-color);
 }
-.child_3 div:last-of-type span{
+.priceAndDays div:last-of-type span{
     color:var(--second-color);
 }
-.child_3 span {
+.priceAndDays span {
     margin-left: 5px;
 }
 .parent .line_hr {
@@ -85,20 +81,26 @@ body{
     height: 2px;
     background-color: hsl(215, 32%, 27%);
 }
-.child_4 {
+.creator {
     display: flex;
 }
-.child_4 img {
+.creator img {
     width: 45px;
     height: 45px;
     border: 2px solid hsl(0, 0%, 100%);
     border-radius: 50%;
     margin-right:15px ;
 }
-.child_4 p{
+.creator p{
     color: var(--second-color);
     font: 600;
 }
-.child_4 p span{
-    color: var(--main-color);
+.creator a {
+    text-decoration: none;
+}
+.creator p a{
+    color:hsl(0, 0%, 100%);
+}
+.creator p a:hover{
+    color:  var(--main-color);;
 }
