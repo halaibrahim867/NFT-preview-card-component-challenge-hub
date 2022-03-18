@@ -7,10 +7,11 @@ body{
     margin: 0;
     top: 0;
     display: flex;
+    height: 100vh;
     justify-content: center;
-    align-content: center;
     font-family: 'Outfit', sans-serif;
     background-color: hsl(217, 54%, 11%);
+    align-items: center;
 }
 :root{
     --main-color:hsl(178, 100%, 50%);
@@ -47,6 +48,7 @@ body{
     background-position: center;
     display: none;
     z-index: 1;
+
 }
 .image:hover::before{
     display: block;
@@ -69,7 +71,7 @@ body{
     justify-content: space-between;
     margin-bottom: 20px;
 }
-.pricesndDays div:first-of-type span{
+.priceAndDays div:first-of-type span{
     color: var(--main-color);
 }
 .priceAndDays div:last-of-type span{
